@@ -1,0 +1,104 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Pip / Build
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing / Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+*.log
+logs/
+uvicorn.log
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Machine Learning Files
+# =========================
+# Keep your trained model if you want to version it:
+# Remove the line below if you want banking_model.pkl tracked
+*.pkl
+*.joblib
+
+# Large datasets (optional)
+*.csv
+*.xlsx
+*.parquet
+
+# But keep sample datasets if needed:
+!sample_dataset.csv
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Desktop.ini
+Thumbs.db
+
+# =========================
+# Temporary Files
+# =========================
+temp/
+tmp/
+*.tmp
+
+# =========================
+# Screenshots / uploads
+# =========================
+uploads/
+screenshots/
