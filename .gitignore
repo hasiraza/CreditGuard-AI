@@ -1,58 +1,32 @@
-# =========================
 # Python
-# =========================
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
 
-# Virtual Environment
+# Virtual environment
 venv/
-env/
-ENV/
 .venv/
+env/
 
-# Build files
-build/
-dist/
-*.egg-info/
-.eggs/
-pip-wheel-metadata/
-
-# Testing / cache
+# Logs / cache
+*.log
 .pytest_cache/
 .coverage
-htmlcov/
-.cache
 
-# Logs
-*.log
-logs/
-
-# Environment variables
+# Secrets
 .env
-.env.*
-*.env
+.streamlit/secrets.toml
+
+# Ignore pickle files globally…
+*.pkl
+
+# …except your actual trained model in model folder
+!model/
+!model/banking_model.pkl
+
+# Keep CSV files tracked (do not ignore them)
+# (No *.csv rule here)
 
 # IDE
 .vscode/
 .idea/
-
-# OS files
 .DS_Store
-Thumbs.db
-
-# Temp files
-temp/
-tmp/
-*.tmp
-
-# Streamlit secrets only
-.streamlit/secrets.toml
-
-# Ignore all pickle files except your trained model
-*.pkl
-!banking_model.pkl
-
-# Optional: ignore uploaded runtime files only
-uploads/
