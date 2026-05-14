@@ -12,93 +12,47 @@ env/
 ENV/
 .venv/
 
-# Pip / Build
+# Build files
 build/
 dist/
 *.egg-info/
 .eggs/
 pip-wheel-metadata/
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Testing / Coverage
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
+# Testing / cache
 .pytest_cache/
-nosetests.xml
-coverage.xml
-*.cover
+.coverage
+htmlcov/
+.cache
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-
-# =========================
-# FastAPI / Uvicorn
-# =========================
+# Logs
 *.log
 logs/
-uvicorn.log
 
-# =========================
-# Streamlit
-# =========================
-.streamlit/secrets.toml
-
-# =========================
-# Machine Learning Files
-# =========================
-# Keep your trained model if you want to version it:
-# Remove the line below if you want banking_model.pkl tracked
-*.pkl
-*.joblib
-
-# Large datasets (optional)
-*.csv
-*.xlsx
-*.parquet
-
-# But keep sample datasets if needed:
-!sample_dataset.csv
-
-# =========================
-# Environment Variables
-# =========================
+# Environment variables
 .env
 .env.*
 *.env
 
-# =========================
-# IDE / Editor
-# =========================
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*.DS_Store
-Thumbs.db
 
-# =========================
-# OS Files
-# =========================
+# OS files
 .DS_Store
-Desktop.ini
 Thumbs.db
 
-# =========================
-# Temporary Files
-# =========================
+# Temp files
 temp/
 tmp/
 *.tmp
 
-# =========================
-# Screenshots / uploads
-# =========================
+# Streamlit secrets only
+.streamlit/secrets.toml
+
+# Ignore all pickle files except your trained model
+*.pkl
+!banking_model.pkl
+
+# Optional: ignore uploaded runtime files only
 uploads/
-screenshots/
